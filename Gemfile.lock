@@ -139,6 +139,8 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
+    tailwindcss-rails (0.3.3)
+      rails (>= 6.0.0)
     thor (1.1.0)
     tilt (2.0.10)
     tzinfo (2.0.4)
@@ -161,6 +163,7 @@ DEPENDENCIES
   rails (~> 6.1.4)
   sass-rails (>= 6)
   sqlite3 (~> 1.4)
+  tailwindcss-rails (~> 0.3.3)
   tzinfo-data
   view_component (~> 2.36.0)
 
