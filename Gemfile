@@ -14,6 +14,7 @@ gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 gem 'view_component', '~> 2.36.0', require: 'view_component/engine'
+gem 'webpacker', "~> 5.2.1"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
