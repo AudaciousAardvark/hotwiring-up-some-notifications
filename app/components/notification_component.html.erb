@@ -1,3 +1,6 @@
-<div class="<%= notification_classes %>">
-  <p><%= @text %></p>
+<div class="<%= notification_classes %>" data-controller="notification">
+  <div class="flex justify-center">
+    <p class="mr-6"><%= @text %></p>
+    <a class="text-blue-500 hover:underline" data-action="click->notification#clear">X</a>
+  </div>
 </div>
