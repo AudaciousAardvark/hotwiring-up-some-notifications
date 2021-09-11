@@ -2,6 +2,10 @@
   <h1 class="text-4xl font-semibold">
     Welcome aboard!
   </h1>
-  <%= render(NotificationComponent.new(text: "Warning! You are about to do something.")) %>
+  <%= render(NotificationComponent.new(text: @message)) %>
+  <div class="flex justify-center mb-8">
+    <%= link_to("Hello Notification", hello_path, class: "p-4 bg-blue-100 rounded border-solid border-2 border-yellow-300 mr-4") %>
+    <%= link_to("Goodbye Notification", goodbye_path, class: "p-4 bg-blue-100 rounded border-solid border-2 border-yellow-300") %>
+  </div>
   <p>Some awesome site content</p>
 </div>
