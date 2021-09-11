@@ -6,12 +6,18 @@ class PagesController < ApplicationController
   def hello
     @message = "Hello there!"
 
-    render template: "pages/home"
+    respond_to do |format|
+      format.turbo_stream { render turbo_stream: turbo_stream.append(:notifications, render_to_string(NotificationComponent.new(text: @message))) }
+      format.html { render template: "pages/home" }
+    end
   end
 
   def goodbye
     @message = "Goodbye for now!"
 
-    render template: "pages/home"
+    respond_to do |format|
+      format.turbo_stream { render turbo_stream: turbo_stream.append(:notifications, render_to_string(NotificationComponent.new(text: @message))) }
+      format.html { render template: "pages/home" }
+    end
   end
 end
