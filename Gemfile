@@ -29,3 +29,4 @@ end
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem "tailwindcss-rails", "~> 0.3.3"
+gem "turbo-rails", "~> 0.7.11"
